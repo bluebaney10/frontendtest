@@ -1,0 +1,142 @@
+/* headder menu css*/
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.interface_header{width:100%; height:67px;  position:fixed;   z-index:19; text-align:center; }
+
+.interface_header__block{ position:relative; background-color:#ffffff; margin:0 21px;}
+
+.menu_pc{ max-width:1326px;}
+
+
+.menu--menuBt{display:inline-block; float:left; padding:12px 22px;}
+.menu--logo{ position:absolute;  text-align:center;  margin:0 auto;  padding:12px 22px;}
+
+.menu_pc_bt{ display:inline-block; float:right; font-family: 'wp_domino_novelregular'; font-size:15px; color:#000000; text-align:center; height:16px; padding:12px 22px; text-decoration:none; margin-left:-4px; box-sizing: content-box; }
+
+.menu_pc_bt:hover, .menu_pc_bt.current {background:url(../images/index/rew_menu_on.png); background-size:100% 100%; color:#000; text-decoration:none; cursor:pointer;}
+.menu_pc{display:block; text-align:right; }
+
+
+
+ul.menu {
+   
+    width: 100%;
+    height: 67px;
+    list-style: none;
+    margin-top: 21px;
+    text-align:center;
+	padding-left: 0px;
+	font-size:14px;
+	line-height:24px;
+}
+li {
+    display:inline;    
+}
+
+.menu__left {
+    float: left;  
+	margin-top:24px;   
+	margin-left:24px;
+	padding-left:35px;
+	
+}
+.menubg{background:url(../image/menu/menu_line.jpg) no-repeat center left ;}
+
+.menu__center {
+    position: absolute;
+    left: 50%;  
+	margin-left:-77px;
+}
+.menu__center img{ padding-top:13px;}
+
+.menu__right {
+    float: right;
+	margin-top:24px;   
+	margin-right:20px;
+	height: 25px;
+	
+}
+
+.search{background:url(../image/menu/menu_search.jpg) no-repeat center right ; padding-right:29px;}
+.signin{background:url(../image/menu/menu_signin.jpg) no-repeat center right ; padding-right:26px;}
+.bags{background:url(../image/menu/menu_bags.jpg) no-repeat center right ; padding-right:32px;}
+
+
+
+
+.menu_search {
+    width: 20px;
+    height: 33px;
+    background: url(../image/menu/search_ico.png) no-repeat right top 10px;
+}
+.menu_search:hover{background: url(../image/menu/search_ico_on.png) no-repeat right top 10px;}
+
+.menu_search_m {
+    width: 20px;
+    height: 33px;
+    background: url(../image/menu/search_ico_on.png) no-repeat right top;
+}
+.menu_mob_bt:hover .menu_search_m{background: url(../image/menu/search_ico.png) no-repeat right top;}
+
+
+.menu_main{ margin-top:4%;}
+
+.menu_mob{ display:none;}
+.menu_mob2{ position:absolute; cursor:pointer; left: 5px;
+top: -40px;}
+.menu_mob_tab{ position: fixed; z-index:1000; width:100%; height:auto; left:0px; top:40px; display:none;}
+.menu_mob_bt {
+    font-size: 14px;
+    background-color: #fbfbfb;
+    width: auto;
+    text-align: left;
+    color: #000;
+    border-bottom: solid 1px #bbb;
+    padding: 5px 0px 3px 20px;
+    padding-left: 20px;
+    line-height: 26px;
+}
+.menu_mob_bt:hover, .menu_mob_bt.current {background-color:#000; color:#FFF; text-decoration:none; cursor:pointer;}
+
+.menu_hmob_bt {
+    font-size: 20px;
+    background-color: #fbfbfb;
+    width: auto;
+    height: 30px;
+    text-align: left;
+    color: #000;
+    border-bottom: solid 1px #bbb;
+    padding: 11px 0px 3px 20px;
+    line-height: 26px;
+	font-weight:bold;
+}
+
+
+.menu_fade{ position: fixed; z-index:10; width:100%; height:100%; left:0px; bottom:0px; background-color:rgba(255, 255, 255, 0.8); display:none;}
+
+
+
+
+
+
+
+
+ /* footer menu css*/
+
+
+@media screen and (max-width: 768px) {
+ul.menu{display:none;}
+.menu_pc{display:none;}
+.menu_mobile{display:block;}
+.menu_mob{ width:60px; height:50px; top: 0px; display:block; z-index:999; position:fixed;}
+
+.search,.signin,.bags,.menu__left,.menubg{ background-position:center left 10px; padding-left:45px;}
+
+
+}
+

@@ -1,0 +1,48 @@
+	<div>
+	 	 <div class="interface_header__block">
+        <ul class="menu">
+        <li class="menu__left menubg"><a href="#">Menu</a></li>
+        <li class="menu__center"><img src="image/menu/menu_logo.jpg"></li>
+        <li class="menu__right bags"><a href="#">BAG</a></li>
+        <li class="menu__right signin"><a href="#">SIGN IN</a></li>
+        <li class="menu__right search"><a href="#">SEARCH</a></li>
+        </ul>
+		<div style="clear: both;"></div>
+       </div>
+
+         <div class="menu_mobile">
+	<div class="menu_mob bt" onclick=""><img src="image/menu/menu_mob.png" width="50" height="50"></div>
+</div>
+
+         <div class="menu_mob_tab">
+    
+
+	<div class="menu_mob2 bt">
+    <img src="image/menu/menu_mob.png" width="50" height="50" />
+    </div>
+
+        <div class="menu_mob_bt menubg t_gap10">Menu</div>
+	    <div class="menu_mob_bt search">SEARCH</div>
+	    <div class="menu_mob_bt signin" >SIGN IN</div>
+        <div class="menu_mob_bt bags">BAG</div>
+     
+	
+	
+</div>
+    
+    </div>
+
+
+<div class="menu_fade"></div>
+<script>
+	
+	$('.menu_mob').click(function() {
+	$('.menu_mob_tab').fadeIn();
+	 $('.menu_fade').show();
+	 })
+	
+	$('.menu_mob_bt,.menu_mob2').click(function() {
+		$('.menu_mob_tab').hide()
+		$('.menu_fade').hide();
+	})
+</script>
